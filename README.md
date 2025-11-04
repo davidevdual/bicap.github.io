@@ -76,11 +76,11 @@ A unique dataset collected using an RGB camera and an advanced motion capture sy
 
 ### Camera
 
-	The RGB videos were captured with a [Stereolabs ZED2 camera](https://www.stereolabs.com/en-sg/blog/introducing-zed-2).
+The RGB videos were recorded with a [Stereolabs ZED2 camera](https://www.stereolabs.com/en-sg/blog/introducing-zed-2). A human expert annotated the symbolic task plans using the RGB videos and the BACFG.
 
 ### Motion Capture
 
-	
+The participants' motion was captured with four [Vicon Vantage 16](https://help.vicon.com/space/Vantage/15041618/V16+camera+specifications) and four [Vicon MX T160](https://help.vicon.com/download/attachments/11108354/T-Series_GoFurther_Rev1.3_2010Aug.pdf) cameras positioned across the workspace.
 	
 ## Miscellaneous
 
