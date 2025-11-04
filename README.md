@@ -139,22 +139,6 @@ The following data is unavailable in the dataset:
 * The video data for the passing of the driller by subject BBM15 is available for nine trials
 * The video data for the passing of the wood block by subject BBM15 is available for nine trials
 
-## Authors
-
-* David Carmona - National University of Singapore - [david.carmona@u.nus.edu](david.carmona@u.nus.edu)
-* Prof. Haoyong Yu - National University of Singapore [bieyhy@nus.edu.sg](bieyhy@nus.edu.sg)
-
-## Version History
-
-* v.1.0 (current)
-    * Initial Release 
-
 ## License
 
-This project is licensed under the Creative Commons Attribution 4.0 International License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-The Authors would like to thank Ms Yan Ting Loong for collecting the dataset of human dual-arm manipulation actions, Dr Thomas
-Kwok Ming Fung for helping with the experimental design, Dr Francisco Anaya Reyes for providing help with the IRB submission,
-and Ms Cindy Chia Sing Li for assisting with the preliminary experiments.
+This dataset is made available under the Creative Commons Attribution 4.0 International License - see the LICENSE.md file for details
