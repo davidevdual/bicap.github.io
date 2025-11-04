@@ -1,1 +1,130 @@
 # BiCap Dataset
+
+BiCap is a novel bi-modal dataset designed to advance the development of learning from demonstration (LfD) algorithms in dual-arm robotic manipulation. It comprises 4,026 demonstrations collected from fifteen participants performing pouring, opening, and passing tasks with household objects. Each demonstration includes an RGB video recording, upper-limb kinematics, and a symbolic task plan annotated using a bio-inspired action context-free grammar (BACFG). BiCap overcomes fundamental limitations of existing LfD datasets, which often lack formally structured symbolic annotations and exhaustive capture of dual-arm manipulation skills, by coupling fine-grained symbolic representations with trajectory data. It provides a rigorous foundation for developing and evaluating algorithms capable of learning, planning, and generalising complex dual-arm manipulation behaviors.
+
+## Brief Description
+
+A unique dataset collected using an RGB camera and an advanced motion capture system. The paper presenting BiCap is in the [International Journal of Robotics Research (IJRR)](https://journals.sagepub.com/doi/abs/10.1177/02783649241290836). Nevertheless, several slight improvements have been made to the dataset since its publication in IJRR. This website provides the latest information on BiCap.
+
+## Getting Started
+
+### Software
+
+The ZED Explorer software is required to visualise the videos (svo file format). ZED Explorer is available within the ZED SDK framework
+and can be downloaded from this link: https://www.stereolabs.com/developers/release. Please follow the instructions
+on ZED's website.
+
+### Folder Hierarchy
+
+    Human_Dualarm_Manipulation_Dataset
+    ├── Motion Capture                          # Folder containing all the subjects' motion data.
+	│   ├── BBM01                               # Data of the subject number BBM01.
+	│   │    ├── pouring_bowl_cracker_01.csv    # The motion data for the first trial of the subject pouring box of crackers into a bowl.
+    │   │    ├── pouring_bowl_cracker_02.csv    # The motion data for the second trial of the subject pouring box of crackers into a bowl.
+    │   │    ├── passing_masterchef_04.csv      # The motion data for the fourth trial of the subject passing a masterchef can.
+    │   │    └── ...
+	│   └── ...
+    ├── Videos                                  # Folder containing all the subjects' videos taken with the egocentric camera and their corresponding task plans. 
+    │   ├── BBM01                               # Data of the subject number BBM01.
+	│   │   ├── Expt 1 (Pouring)                # Data of the first experiment (the pouring task).
+    │   │   │   ├── Bowl and Cracker box        # Video and task plan data for pouring a box of crackers into a bowl.
+    │   │   │   │   ├── Trial 1.svo             # Video data from the egocentric camera for the first trial.
+    │   │   │   │   ├── Trial 1.xml             # Task plan for the first trial.
+    │   │   │   │   ├── Trial 2.svo             # Video data from the egocentric camera for the second trial.
+    │   │   │   │   ├── Trial 2.xml             # Task plan for the second trial.
+    │   │   │   │   └── ...
+    │   │   │   └── ... 
+    │   │   └── ...    
+    │   └── ...
+	├── participants.xlsx                       # The subjects' data.
+    ├── readme.pdf
+    └── readme.md
+	
+### Miscellaneous
+
+The subjects' identifiers inside the XML files differ from the folders' names (e.g., BBM01, BBM02, or BBM03). The mapping is:
+
+* BBM01: 010
+* BBM02: 012
+* BBM03: 013
+* BBM04: 014
+* BBM05: 015
+* BBM06: 016
+* BBM07: 017
+* BBM08: 018
+* BBM09: 019
+* BBM10: 020
+* BBM11: 021
+* BBM12: 022
+* BBM13: 023
+* BBM14: 024
+* BBM15: 025
+
+The joint angles present in the csv files are:
+
+* LElbowAngles: Left elbow angles
+* LShoulderAngles: Left shoulder angles
+* LThoraxAngles: The forward tilt, the right tilt, and right rotation angles of the thorax
+* LWristAngles: Left wrist angles
+* RElbowAngles: Right elbow angles
+* RShoulderAngles: Right shoulder angles
+* RThoraxAngles: The forward tilt, the left tilt, and left rotation angles of the thorax
+* RWristAngles: Right wrist angles
+
+The markers' positions in the csv are:
+
+* C7: Seventh cervical vertebra
+* T10: Tenth toracic vertebra
+* CLAV: Clavicle
+* STRN: Sternum
+* RBAK: Right back
+* LSHO: Left shoulder
+* LUPA: Left upper arm
+* LELB: Left elbow
+* LFRM: Left forearm
+* LWRA: Left wrist marker A
+* LWRB: Left wirst marker B
+* LFIN: Left finger
+* RSHO: Right shoulder
+* RUPA: Right upper arm
+* RELB: Right elbow
+* RFRM: Right forearm
+* RWRA: Right wrist marker A
+* RWRB: Right wrist marker B
+* RFIN: Right finger
+* LASI: Left anterior superior iliac
+* RASI: Right anterior superior iliac
+* LPSI: Left posterior iliac
+* RPSI: Right posterior iliac
+
+The following data is unavailable in the dataset:
+
+* The motion data for subjects BBM11 and BBM13 are absent since the VICON system malfunctioned on the day of the experiments
+* The motion data of the first trial for passing the MasterChef executed by subject BBM05 is unavailable
+* The motion data for passing the power drill achieved by subject BBM12 is absent
+* The video data for the passing the wood block by subject BBM01 is available for nine trials
+* The video data for the pouring of the mug into the pitcher by subject BBM07 is absent
+* The video data for the passing of the woodblock by subject BBM08 is available for nine trials
+* The video data for the passing of the driller by subject BBM12 is absent
+* The video data for the passing of the driller by subject BBM15 is available for nine trials
+* The video data for the passing of the wood block by subject BBM15 is available for nine trials
+
+## Authors
+
+* David Carmona - National University of Singapore - [david.carmona@u.nus.edu](david.carmona@u.nus.edu)
+* Prof. Haoyong Yu - National University of Singapore [bieyhy@nus.edu.sg](bieyhy@nus.edu.sg)
+
+## Version History
+
+* v.1.0 (current)
+    * Initial Release 
+
+## License
+
+This project is licensed under the Creative Commons Attribution 4.0 International License - see the LICENSE.md file for details
+
+## Acknowledgments
+
+The Authors would like to thank Ms Yan Ting Loong for collecting the dataset of human dual-arm manipulation actions, Dr Thomas
+Kwok Ming Fung for helping with the experimental design, Dr Francisco Anaya Reyes for providing help with the IRB submission,
+and Ms Cindy Chia Sing Li for assisting with the preliminary experiments.
