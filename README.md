@@ -158,6 +158,10 @@ The following data is unavailable in the dataset:
 * The video data for the passing of the driller by subject BBM12 is absent
 * The video data for the passing of the driller by subject BBM15 is available for nine trials
 * The video data for the passing of the wood block by subject BBM15 is available for nine trials
+  
+### Contact
+
+David Carmona: [dcmoreno@nus.edu.sg](dcmoreno@nus.edu.sg)
 
 ## License
 
