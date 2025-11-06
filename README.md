@@ -50,7 +50,7 @@ A unique dataset collected using an RGB camera and an advanced motion capture sy
 
 ### Folder Hierarchy
 
-    Human_Dualarm_Manipulation_Dataset
+    BiCap
     ├── Motion Capture                          # Folder containing all the subjects' motion data.
 	│   ├── BBM01                               # Data of the subject number BBM01.
 	│   │    ├── pouring_bowl_cracker_01.csv    # The motion data for the first trial of the subject pouring box of crackers into a bowl.
